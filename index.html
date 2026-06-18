@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marc Oliver Gasta — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/icons/logo.png" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#hero">
+        <img src="assets/icons/logo.png" alt="Logo" class="nav-logo-icon" />
+        GASTA.
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+
+    <!-- TWO-COLUMN LAYOUT WRAPPER -->
+    <div class="layout">
+      <!-- LEFT PANEL — sticky -->
+      <aside class="left-panel" id="hero">
+        <div class="left-inner">
+          <!-- PHOTO -->
+          <div class="photo-frame">
+            <div class="photo-box">
+              <img src="assets/images/GASTA.JPG" alt="Marc Oliver Gasta" />
+            </div>
+          </div>
+
+          <!-- NAME & ROLE -->
+          <div class="left-identity">
+            <h1 class="left-name">Marc Oliver Gasta</h1>
+            <p class="left-role">23 · Filipino · English & Filipino</p>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-block">
+            <p class="contact-block-label">Contact</p>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+                <a
+                  href="mailto:marcolivergastagonzales@gmail.com"
+                  class="contact-link"
+                  >marcolivergastagonzales<br />@gmail.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.96-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                </span>
+                <span class="contact-value">+63 948 864 2607</span>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span class="contact-value">Taguig City, Philippines</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="assets/Gasta_Marc.pdf" target="_blank" class="cv-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="12" y1="18" x2="12" y2="12" />
+              <polyline points="9 15 12 18 15 15" />
+            </svg>
+            View CV / Resume
+          </a>
+
+          <!-- SOCIAL LINKS -->
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/marcoliver.gonzales"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/marcgasta/"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://x.com/mackygasta"
+              target="_blank"
+              class="social-icon"
+              aria-label="X (Twitter)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marc-oliver-gasta/"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Gasta-Marc-Oliver"
+              target="_blank"
+              class="social-icon"
+              aria-label="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT PANEL — scrollable -->
+      <main class="right-panel">
+        <!-- ABOUT -->
+        <section class="r-section" id="about">
+          <p class="section-label">About</p>
+          <h2 class="section-title">Who I am.</h2>
+          <p class="about-bio">
+            IT undergraduate with hands-on experience in
+            <strong>tech support</strong> and <strong>sales</strong>. I solve
+            problems, help people, and build towards a career at the
+            intersection of technology and service.
+          </p>
+        </section>
+
+        <div class="r-divider"></div>
+
+        <!-- EXPERIENCE -->
+        <section class="r-section" id="experience">
+          <p class="section-label">Experience</p>
+          <h2 class="section-title">Where I've been.</h2>
+
+          <div class="exp-list">
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-icon">🖥️</div>
+                <div>
+                  <div class="exp-card-role">Tech Support Representative</div>
+                  <div class="exp-card-meta">Technical Support Lvl 1</div>
+                </div>
+                <span class="exp-card-tag">Tech Support Inbound</span>
+              </div>
+              <p class="exp-card-desc">
+                Assisted customers with technical issues — troubleshooting
+                devices, software, and connectivity problems across multiple
+                channels.
+              </p>
+              <div class="exp-highlights">
+                <span class="exp-highlight">Device Troubleshooting</span>
+                <span class="exp-highlight">Software Support</span>
+                <span class="exp-highlight">Connectivity Issues</span>
+                <span class="exp-highlight">Product Recommendation</span>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-icon">🤝</div>
+                <div>
+                  <div class="exp-card-role">Sales Associate</div>
+                  <div class="exp-card-meta">
+                    Sales Representative · Retention Specialist
+                  </div>
+                </div>
+                <span class="exp-card-tag">Sales Outbound</span>
+              </div>
+              <p class="exp-card-desc">
+                Engaged customers to understand their needs and recommended
+                appropriate solutions while maintaining a professional, positive
+                interaction.
+              </p>
+              <div class="exp-highlights">
+                <span class="exp-highlight">Customer Engagement</span>
+                <span class="exp-highlight">Product Recommendation</span>
+                <span class="exp-highlight">Retention Strategies</span>
+                <span class="exp-highlight">Downsell and Upselling</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="r-divider"></div>
+
+        <!-- SKILLS -->
+        <section class="r-section" id="skills">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">What I work with.</h2>
+
+          <div class="skills-block">
+            <div class="skill-row">
+              <span class="skill-row-label">Technical</span>
+              <div class="skill-row-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Javascript</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Github</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label">Support</span>
+              <div class="skill-row-tags">
+                <span class="skill-tag">Tech Support</span>
+                <span class="skill-tag">Troubleshooting</span>
+                <span class="skill-tag">Customer Handling</span>
+                <span class="skill-tag">Sales</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label">Tools</span>
+              <div class="skill-row-tags">
+                <span class="skill-tag">Windows</span>
+                <span class="skill-tag">Github/Git</span>
+                <span class="skill-tag">MS Office</span>
+                <span class="skill-tag">Visual Studio Code</span>
+                <span class="skill-tag">Chat GPT</span>
+                <span class="skill-tag">Claude AI</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label">Soft Skills</span>
+              <div class="skill-row-tags">
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Adaptability</span>
+                <span class="skill-tag">Teamwork</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="r-divider"></div>
+
+        <!-- PROJECTS -->
+        <section class="r-section" id="projects">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">What I've built.</h2>
+          <div class="coming-card coming-card-full">
+            <span class="coming-icon">📁</span>
+            <div>
+              <div class="coming-name">Coming Soon</div>
+              <div class="coming-desc">
+                Academic and personal projects — network setups, software
+                builds, and more — will be showcased here once completed.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="r-divider"></div>
+
+        <!-- CERTIFICATES -->
+        <section class="r-section" id="certificates">
+          <p class="section-label">Certificates</p>
+          <h2 class="section-title">What I've earned.</h2>
+          <div class="coming-card coming-card-full">
+            <span class="coming-icon">🎓</span>
+            <div>
+              <div class="coming-name">Coming Soon</div>
+              <div class="coming-desc">
+                Certifications and course completions in IT, networking,
+                cybersecurity, and more will be listed here.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT FOOTER -->
+        <div class="r-footer">
+          <p>
+            © 2026 Marc Oliver L. Gasta &nbsp;·&nbsp; Portfolio v1.0
+            &nbsp;·&nbsp; 🚧 Work in Progress
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
