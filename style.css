@@ -543,7 +543,29 @@ nav {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 820px) {
+
+/* TABLET & SMALL DESKTOP (768px - 1023px) */
+@media (max-width: 1023px) {
+  .right-panel {
+    padding: 0 2.5rem;
+  }
+  
+  .left-panel {
+    width: 300px;
+  }
+  
+  .left-inner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .photo-box {
+    width: 130px;
+    height: 160px;
+  }
+}
+
+/* TABLET PORTRAIT & LARGE PHONES (768px and below) */
+@media (max-width: 767px) {
   body {
     overflow: auto;
     height: auto;
@@ -568,37 +590,316 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
+    align-items: center;
   }
+
   .photo-frame {
-    width: 100%;
+    width: auto;
     justify-content: flex-start;
   }
+
   .photo-box {
     width: 100px;
     height: 120px;
   }
+
   .left-identity {
     flex: 1;
     min-width: 180px;
   }
+
+  .contact-block {
+    width: 100%;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .social-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+  }
+
   .right-panel {
     height: auto;
     overflow: visible;
     padding: 0 1.5rem;
   }
+
+  .r-section {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+
+  .exp-card-header {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .exp-card-tag {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
   .coming-grid {
     grid-template-columns: 1fr;
   }
+
+  .coming-card-full {
+    max-width: 100%;
+  }
+
   nav {
     padding: 0 1.2rem;
   }
+
   .nav-links {
-    gap: 1.2rem;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
   }
 }
 
+/* MOBILE PORTRAIT (480px and below) */
+@media (max-width: 479px) {
+  .left-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .photo-frame {
+    justify-content: center;
+  }
+
+  .photo-box {
+    width: 140px;
+    height: 170px;
+  }
+
+  .left-identity {
+    min-width: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .left-name {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .left-role {
+    font-size: 0.85rem;
+  }
+
+  .contact-block {
+    text-align: left;
+  }
+
+  .contact-list {
+    align-items: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .cv-btn {
+    font-size: 0.9rem;
+    padding: 0.8em 1em;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .right-panel {
+    padding: 0 1rem;
+  }
+
+  .r-section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.3rem, 6vw, 1.6rem);
+  }
+
+  .exp-card {
+    padding: 1.2rem;
+  }
+
+  .exp-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .exp-card-tag {
+    align-self: flex-start;
+  }
+
+  .exp-highlights {
+    gap: 0.3rem;
+  }
+
+  .exp-highlight {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.2rem 0;
+  }
+
+  .skill-row-label {
+    min-width: auto;
+    padding-top: 0;
+  }
+
+  .skill-row-tags {
+    width: 100%;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+  }
+
+  .coming-card {
+    padding: 1rem;
+  }
+
+  .coming-name {
+    font-size: 0.85rem;
+  }
+
+  .coming-desc {
+    font-size: 0.75rem;
+  }
+
+  .r-footer {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  /* Mobile nav - collapse to hamburger */
+  .nav-links {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+}
+
+/* VERY SMALL PHONES (360px and below) */
+@media (max-width: 359px) {
+  .photo-box {
+    width: 120px;
+    height: 150px;
+  }
+
+  .left-name {
+    font-size: 1.4rem;
+  }
+
+  .contact-link,
+  .contact-value {
+    font-size: 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .exp-card-role {
+    font-size: 0.85rem;
+  }
+
+  .exp-card-desc {
+    font-size: 0.8rem;
+  }
+}
+
+/* WIDE SCREENS (1440px and up) */
+@media (min-width: 1440px) {
+  .left-panel {
+    width: 380px;
+  }
+
+  .left-inner {
+    padding: 3rem 2.5rem;
+  }
+
+  .right-panel {
+    padding: 0 5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .photo-box {
+    width: 170px;
+    height: 200px;
+  }
+
+  .left-name {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  }
+
+  .about-bio {
+    font-size: 1rem;
+    max-width: 640px;
+  }
+}
+
+/* REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
   .dot-green {
     animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .exp-card,
+  .coming-card,
+  .social-icon {
+    transition: none;
+  }
+}
+
+/* HIGH CONTRAST MODE */
+@media (prefers-contrast: more) {
+  :root {
+    --text-sub: #a0c4e8;
+    --graphite-dim: #f0f0ee;
+    --navy-muted: #4a6a8e;
+  }
+
+  .exp-card,
+  .skill-tag,
+  .coming-card {
+    border-width: 2px;
   }
 }
